@@ -46,7 +46,9 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: |
+          npm ci
+          npm install -g @tailwindcss/cli
       - name: Cache Hugo modules
         uses: actions/cache@v4
         with:
