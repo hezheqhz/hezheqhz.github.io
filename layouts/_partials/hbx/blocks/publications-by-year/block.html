@@ -1,0 +1,50 @@
+{{/* Custom HugoBlox block: Publications grouped by year (citation view) */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ if not (reflect.IsMap $content) }}{{ $content = dict }}{{ end }}
+{{ $title := "" }}
+{{ with index $content "title" }}{{ $title = printf "%v" . | emojify | $page.RenderString }}{{ end }}
+
+{{ $pubs := sort (where site.RegularPages "Section" "publications") "Date" "desc" }}
+
+{{/* Enable Alpine.js if any publication has author notes */}}
+{{ range $pubs }}
+  {{ if isset .Params "author_notes" }}
+    {{ $page.Store.Set "has_alpine" true }}
+    {{ break }}
+  {{ end }}
+{{ end }}
+
+{{ $config := dict
+  "columns" 1
+  "len" (len $pubs)
+  "fill_image" true
+  "show_date" true
+  "show_read_time" false
+  "show_read_more" true
+}}
+
+<div class="flex flex-col items-center px-6">
+  {{ with $title }}<div class="text-3xl font-bold text-gray-900 dark:text-white">{{ . }}</div>{{ end }}
+</div>
+
+{{ partial "functions/render_view" (dict "fragment" "start" "page" $page "item" nil "view" "citation" "config" $config) }}
+
+{{ $years := slice }}
+{{ range $pubs }}
+  {{ $y := .Date.Format "2006" }}
+  {{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}
+{{ end }}
+
+{{ range $years }}
+  {{ $y := . }}
+  <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-8 mb-2">{{ $y }}</h3>
+  {{ range $pubs }}
+    {{ if eq (.Date.Format "2006") $y }}
+      {{ partial "functions/render_view" (dict "page" . "item" . "view" "citation" "index" 0 "config" $config) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ partial "functions/render_view" (dict "fragment" "end" "page" $page "item" nil "view" "citation") }}

@@ -47,25 +47,8 @@ sections:
         We are always looking for motivated students and collaborators — feel free to reach out! 😃
     design:
       columns: '1'
-  - block: collection
+  - block: publications-by-year
     id: papers
     content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
+      title: Publications
 ---

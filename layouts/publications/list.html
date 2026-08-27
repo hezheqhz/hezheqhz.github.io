@@ -1,0 +1,54 @@
+{{ define "main" }}
+
+<div class="max-w-prose mx-auto flex justify-center">
+  <article class="prose prose-slate lg:prose-xl dark:prose-invert">
+    <h1 class="lg:text-6xl">{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+</div>
+
+{{ $view := .Params.view | default "citation" }}
+{{ $pubs := .Pages.ByDate.Reverse }}
+
+{{/* Check if any pages have author_notes to enable Alpine.js */}}
+{{ range $pubs }}
+  {{ if isset .Params "author_notes" }}
+    {{ $.Store.Set "has_alpine" true }}
+    {{ break }}
+  {{ end }}
+{{ end }}
+
+{{ $config := dict
+  "columns" (.Params.columns | default 2)
+  "len" (len $pubs)
+  "fill_image" (.Params.fill_image | default true)
+  "show_date" (.Params.show_date | default true)
+  "show_read_time" (.Params.show_read_time | default true)
+  "show_read_more" (.Params.show_read_more | default true)
+}}
+
+<div class="flex flex-col items-center">
+
+  {{ partial "functions/render_view" (dict "fragment" "start" "page" . "item" . "view" $view "config" $config) }}
+
+  {{ $years := slice }}
+  {{ range $pubs }}
+    {{ $y := .Date.Format "2006" }}
+    {{ if not (in $years $y) }}{{ $years = $years | append $y }}{{ end }}
+  {{ end }}
+
+  {{ range $years }}
+    {{ $y := . }}
+    <h2 class="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4 self-start">{{ $y }}</h2>
+    {{ range $pubs }}
+      {{ if eq (.Date.Format "2006") $y }}
+        {{ partial "functions/render_view" (dict "page" . "item" . "view" $view "index" 0 "config" $config) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ partial "functions/render_view" (dict "fragment" "end" "page" . "item" . "view" $view) }}
+
+</div>
+
+{{ end }}
