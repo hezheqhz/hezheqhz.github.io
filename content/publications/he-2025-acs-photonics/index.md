@@ -29,5 +29,6 @@ awards:
     level: featured
 tags:
 - Quantum Imaging
+profile: false
 featured: true
 ---

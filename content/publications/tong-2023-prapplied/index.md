@@ -18,5 +18,6 @@ publication:
 peer_reviewed: true
 tags:
 - Quantum Correlation
+profile: false
 featured: false
 ---

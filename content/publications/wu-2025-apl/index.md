@@ -17,5 +17,6 @@ publication:
 peer_reviewed: true
 tags:
 - Optomechanics
+profile: false
 featured: false
 ---

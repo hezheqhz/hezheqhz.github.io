@@ -16,5 +16,6 @@ publication:
 peer_reviewed: true
 tags:
 - Superfluid Helium
+profile: false
 featured: false
 ---

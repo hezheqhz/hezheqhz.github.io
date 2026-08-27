@@ -25,5 +25,6 @@ publication:
 peer_reviewed: true
 tags:
 - TERS
+profile: false
 featured: false
 ---

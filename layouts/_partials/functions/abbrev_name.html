@@ -1,0 +1,17 @@
+{{/* Abbreviate a space-separated list of given names to initials.
+     "Guangming" -> "G.", "S. Selim" -> "S. S.", "Jung-Tsung" -> "J.-T." */}}
+{{- $in := strings.TrimSpace (printf "%v" .) -}}
+{{- $out := slice -}}
+{{- range (split $in " ") -}}
+  {{- $t := replace . "." "" -}}
+  {{- if $t -}}
+    {{- $ip := slice -}}
+    {{- range (split $t "-") -}}
+      {{- if gt (len .) 0 -}}
+        {{- $ip = $ip | append (printf "%s." (upper (substr . 0 1))) -}}
+      {{- end -}}
+    {{- end -}}
+    {{- $out = $out | append (delimit $ip "-") -}}
+  {{- end -}}
+{{- end -}}
+{{- return (delimit $out " ") -}}

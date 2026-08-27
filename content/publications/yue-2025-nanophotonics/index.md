@@ -24,5 +24,6 @@ awards:
 tags:
 - Quantum Imaging
 - Review
+profile: false
 featured: true
 ---

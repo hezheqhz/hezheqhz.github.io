@@ -14,5 +14,6 @@ publication:
 peer_reviewed: true
 tags:
 - Quantum Dynamics
+profile: false
 featured: false
 ---

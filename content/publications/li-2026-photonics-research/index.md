@@ -28,5 +28,6 @@ awards:
 tags:
 - Low-Temperature Measurement
 - Optomechanics
+profile: false
 featured: true
 ---

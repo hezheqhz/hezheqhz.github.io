@@ -22,5 +22,6 @@ links:
     url: https://doi.org/10.1126/sciadv.aea9457
 tags:
 - Quantum Imaging
+profile: false
 featured: true
 ---

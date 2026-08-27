@@ -18,5 +18,6 @@ publication:
 peer_reviewed: true
 tags:
 - Heat Transport
+profile: false
 featured: false
 ---

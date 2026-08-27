@@ -17,5 +17,6 @@ publication:
 peer_reviewed: true
 tags:
 - Nanomaterials
+profile: false
 featured: false
 ---

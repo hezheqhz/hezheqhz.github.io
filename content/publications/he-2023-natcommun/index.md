@@ -15,5 +15,6 @@ publication:
 peer_reviewed: true
 tags:
 - Quantum Imaging
+profile: false
 featured: true
 ---
