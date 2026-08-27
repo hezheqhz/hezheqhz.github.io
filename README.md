@@ -35,7 +35,7 @@ gh repo create hezheqhz.github.io --public --source . --push
 
 ## 待办（替换占位内容）
 
-- **头像照片**：把照片命名为 `avatar.jpg` 放到 `assets/media/` 目录（推荐正方形、≥500px）
+- ~~头像照片~~ ✅ 已添加（`assets/media/authors/me.jpg`；换照片直接替换该文件即可）
 - **Google Scholar / ORCID / GitHub**：已填入，如需修改在 `data/authors/me.yaml` 的 `links` 里
 - **CV 下载按钮**：把简历 PDF 放到 `static/uploads/resume.pdf`，然后取消 `content/_index.md` 中 button 的注释
 - 论文的 DOI / PDF 链接可在各论文 `index.md` 里补充 `hugoblox.ids.doi` 和 `links`
