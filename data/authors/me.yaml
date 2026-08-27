@@ -1,0 +1,141 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+  display: Zhe He 赫哲
+  given: Zhe
+  family: He
+  alternate: 赫哲
+  pronunciation: ''
+  pronouns: he/him
+postnominals:
+  - PhD
+status:
+  icon: "🔬"
+role: Associate Research Fellow (副研究员)
+bio: |
+  Zhe He (赫哲) is an Associate Research Fellow at Shandong Institute of
+  Advanced Technology. His research focuses on low-temperature precision
+  measurement, quantum imaging, and near-field scanning imaging. He achieved
+  the first near-field Raman imaging of single-molecule DNA/RNA at room
+  temperature and entangled-photon super-resolution imaging at the
+  single-cell scale. He has published 20+ first/corresponding-author papers
+  in journals including Science Advances, Nature Communications, and JACS,
+  and serves as a reviewer for Nature Communications, Physical Review
+  Letters, Physical Review B, and Nanophotonics.
+
+affiliations:
+  - name: Shandong Institute of Advanced Technology
+    url: https://www.iat.cn/
+
+links:
+  - icon: at-symbol
+    url: mailto:zhe.he@iat.cn
+    label: E-mail Me
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=HE6ENasAAAAJ&hl=en
+  - icon: academicons/orcid
+    url: https://orcid.org/0000-0002-8525-3650
+  - icon: brands/github
+    url: https://github.com/hezheqhz
+
+interests:
+  - Low-Temperature Precision Measurement
+  - Quantum Imaging
+  - Near-Field Scanning Imaging
+
+education:
+  - degree: PhD in Physics
+    institution: Texas A&M University, USA
+    start: 2015-09-01
+    end: 2020-05-31
+    summary: |
+      Advisor: Prof. Marlan O. Scully. Dissertation: Advances in Tip-Enhanced
+      Raman and Photoluminescence Spectroscopy.
+  - degree: BSc in Physics
+    institution: Xi'an Jiaotong University, China
+    start: 2011-09-01
+    end: 2015-06-30
+
+experience:
+  - role: Associate Research Fellow (副研究员)
+    org: Shandong Institute of Advanced Technology
+    start: 2023-07-01
+    summary: |
+      Principal investigator. Research on low-temperature precision
+      measurement, quantum imaging, and near-field scanning imaging.
+      Selected for the Overseas Postdoctoral Talent Program, Taishan
+      Scholar Young Expert Program, and Shandong Excellent Young
+      Scientists Fund (Overseas).
+  - role: Postdoctoral Scholar
+    org: California Institute of Technology (Caltech)
+    start: 2020-05-01
+    end: 2023-05-31
+    summary: |
+      Advisor: Prof. Lihong V. Wang. Research on quantum imaging and
+      quantum microscopy, including quantum microscopy of cells at the
+      Heisenberg limit.
+
+skills:
+  - name: Technical Skills
+    items:
+      - label: Tip-Enhanced Raman Spectroscopy (TERS)
+        level: 5
+      - label: Quantum Optics & Entangled-Photon Imaging
+        level: 5
+      - label: Cryogenic Precision Measurement
+        level: 4
+      - label: Ultrafast & Coherent Raman Spectroscopy
+        level: 4
+      - label: Numerical Modeling of Quantum Dynamics
+        level: 4
+  - name: Research & Communication
+    items:
+      - label: Academic Writing
+        level: 5
+      - label: Peer Review (Nat. Commun., PRL, PRB, Nanophotonics)
+        level: 5
+      - label: Grant Writing
+        level: 4
+
+languages:
+  - name: Chinese (Mandarin)
+    level: 5
+    label: Native
+  - name: English
+    level: 4
+    label: Fluent
+
+awards:
+  - title: Overseas Postdoctoral Talent Program (海外博后引才专项)
+    awarder: China
+    date: "2025-01-01"
+    icon: hero/trophy
+  - title: Excellent Young Scientists Fund, Overseas (山东省优青·海外)
+    awarder: Shandong Provincial Natural Science Foundation
+    date: "2024-01-01"
+    icon: hero/trophy
+  - title: Taishan Scholar Young Expert (泰山学者青年专家)
+    awarder: Shandong Province, China
+    date: "2023-01-01"
+    icon: hero/trophy
+  - title: Dr. Joseph Newton Graduate Student Service Award
+    awarder: Texas A&M University
+    date: "2020-05-01"
+    icon: hero/academic-cap
+  - title: Hagler Heep Fellowship
+    awarder: Texas A&M University
+    date: "2019-09-01"
+    icon: hero/academic-cap
+  - title: Hagler Heep Fellowship
+    awarder: Texas A&M University
+    date: "2018-09-01"
+    icon: hero/academic-cap
+  - title: Herman F. Heep and Minnie Belle Heep Fellowship
+    awarder: Texas A&M University
+    date: "2017-09-01"
+    icon: hero/academic-cap
+  - title: IEEE & Microsoft Young Scholar
+    awarder: IEEE & Microsoft
+    date: "2014-06-01"
+    icon: hero/trophy
