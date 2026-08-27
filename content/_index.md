@@ -47,21 +47,6 @@ sections:
         We are always looking for motivated students and collaborators — feel free to reach out! 😃
     design:
       columns: '1'
-  - block: markdown
-    id: grants
-    content:
-      title: '💰 Funded Projects (PI)'
-      subtitle: ''
-      text: |-
-        | Period | Project | Funding |
-        |---|---|---|
-        | 2026/07 – 2029/06 | General Program, Shandong Provincial Natural Science Foundation | ¥100k |
-        | 2025/01 – | Overseas Postdoctoral Talent Program | ¥900k |
-        | 2024/01 – 2026/12 | Excellent Young Scientists Fund (Overseas), Shandong Provincial Natural Science Foundation | ¥600k |
-        | 2024/01 – 2026/12 | National Youth Science Fund (NSFC) | ¥300k |
-        | 2023/01 – 2025/12 | Taishan Scholar Young Expert Program, Shandong Province | ¥750k |
-    design:
-      columns: '1'
   - block: collection
     id: papers
     content:

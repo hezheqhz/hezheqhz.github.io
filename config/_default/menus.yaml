@@ -10,9 +10,6 @@ main:
   - name: Papers
     url: /#papers
     weight: 11
-  - name: Grants
-    url: /#grants
-    weight: 12
   - name: Publications
     url: publications/
     weight: 20

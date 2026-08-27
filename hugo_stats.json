@@ -41,15 +41,9 @@
       "strong",
       "style",
       "svg",
-      "table",
-      "tbody",
-      "td",
       "template",
-      "th",
-      "thead",
       "time",
       "title",
-      "tr",
       "ul"
     ],
     "classes": [
@@ -735,7 +729,6 @@
       "card-title-f8012ad93471458b8e9aff1957458b46",
       "card-title-fcbb7e36167663fb3ea769c26a5bebab",
       "card-title-fef64605051aa6d52e85eb0edd798de5",
-      "grants",
       "hb-notification-container",
       "hide-button",
       "moon",
