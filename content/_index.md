@@ -47,8 +47,4 @@ sections:
         We are always looking for motivated students and collaborators — feel free to reach out! 😃
     design:
       columns: '1'
-  - block: publications-by-year
-    id: papers
-    content:
-      title: Publications
 ---
